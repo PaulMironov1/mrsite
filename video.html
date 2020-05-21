@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+  	href="webjars/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet"
+  	href="webjars/ekko-lightbox/dist/ekko-lightbox.min.css">
+  <link rel="stylesheet" href="webjars/demo-console/index.css">
+  <link rel="stylesheet" href="css/kurento.css">
+
+  <script src="webjars/jquery/dist/jquery.min.js"></script>
+  <script src="webjars/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="webjars/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+  <script src="/webjars/webrtc-adapter/release/adapter.js"></script>
+  <script src="webjars/demo-console/index.js"></script>
+
+  <script src="js/kurento-utils.js"></script>
+  <script src="js/index.js"></script>
+<title>ВКР Project</title>
+<link href="Untitled1.css" rel="stylesheet">
+<link href="page3.css" rel="stylesheet">
+</head>
+<body>
+<div id="wb_Divider4">
+<div id="Divider4">
+<hr id="DividerLine5" style="display:block;">
+<div id="wb_Heading2" style="display:inline-block;width:165px;z-index:1;">
+<h4 id="Heading2">ВКР Project</h4>
+</div>
+<hr id="DividerLine7" style="display:block;">
+</div>
+</div>
+<div id="wb_Divider2">
+<div id="Divider2-overlay"></div>
+<div id="Divider2">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_MediaPlayer1" style="display:inline-block;width:100%;z-index:3;">
+  <div class="col-md-7">
+    <div id="videoBig">
+      <video id="video" autoplay width="800px" height="600px" poster="img/bonch.jpg"></video>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+<div id="wb_FlexContainer1">
+<div id="FlexContainer1">
+<hr id="Line1" style="display:block;">
+<div id="wb_Heading1" style="display:inline-block;width:165px;z-index:5;">
+<h2 id="Heading1">Параметры</h2>
+</div>
+<hr id="Line2" style="display:block;">
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2-overlay"></div>
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+  <a id="start" href="#" class="btn btn-success"><span
+    class="glyphicon glyphicon-play"></span> Play </a> <a id="pause"
+    href="#" class="btn btn-primary"><span id="pause-icon"
+    class="glyphicon glyphicon-pause"></span><span id="pause-text">
+      Resume </span></a> <a id="stop" href="#" class="btn btn-danger"><span
+    class="glyphicon glyphicon-stop"></span> Stop</a>
+    <div class="col-md-12">
+        <label for="" id="Label11" style="display:block;width:100%;z-index:10;"></label>
+      </div>
+<input type="text" id="videourl" value="http://files.openvidu.io/video/format/sintel.webm" style="width: 100%; height: 26px" disabled>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1-overlay"></div>
+<div id="LayoutGrid1">
+<div class="col-1">
+</div>
+<div class="col-2">
+<label for="" id="Label1" style="display:block;width:100%;z-index:12;">Длительность видео:</label>
+<input type="text" id="duration" style="width: 100%; height: 26px" disabled>
+<label for="" id="Label7" style="display:block;width:100%;z-index:14;"></label>
+<label for="" id="Label8" style="display:block;width:100%;z-index:15;"></label>
+<label for="" id="Label9" style="display:block;width:100%;z-index:16;"></label>
+<label for="" id="Label10" style="display:block;width:100%;z-index:17;"></label>
+</div>
+<div class="col-3">
+<label for="" id="Label2" style="display:block;width:100%;z-index:18;">Перейти к моменту:</label>
+<input type="text" id="seekPosition" style="width: 100%; height: 26px"> <span> ms</span>
+<label for="" id="Label3" style="display:block;width:100%;z-index:20;"></label>
+<a id="doSeek" href="#" class="btn btn-warning"><span class="glyphicon glyphicon-forward"></span> Перейти </a>
+</div>
+<div class="col-4">
+<label for="" id="Label4" style="display:block;width:100%;z-index:22;">Время текущего момента:</label>
+<input type="text" id="videoPosition" style="width: 100%; height: 26px" disabled><span>ms</span>
+<label for="" id="Label5" style="display:block;width:100%;z-index:24;"></label>
+<a id="getPosition" href="#" class="btn btn-info"><span class="glyphicon glyphicon-time"></span> Показать </a>
+</div>
+<div class="col-5">
+<label for="" id="Label6" style="display:block;width:100%;z-index:26;">Консоль:</label>
+<div id="console" class="democonsole" style="width: 100%;height: 102px;">
+  <ul></ul>
+</div>
+<div class="col-6">
+</div>
+</div>
+</div>
+</body>
+</html>
